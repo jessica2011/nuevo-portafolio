@@ -1,0 +1,164 @@
+header{
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  padding: 30px 0 0 0;
+  font-family: 'Montserrat', sans-serif;
+  color:#fff;
+  @media (max-width: 991px){
+    padding: 15px 0;
+  }
+  .jmr-header{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    @media (max-width: 991px){
+      width: 100%;
+      padding: 0 20px;
+    }
+    .logo{
+      display: flex;
+      align-items: center;
+    }
+    .logo{
+      span{
+        line-height: 1;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+    nav{
+      display: flex;
+      align-items: center;
+      transition: height .3s  ease-in-out;
+      @media (max-width: 991px){
+        position: absolute;
+        right: -240px;
+        top: 0;
+        width: 240px;
+        padding-top: 20px;
+        background-color: #ffffff;
+        z-index: 100;
+        align-items: baseline;
+      }
+      ul{
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        li{
+          position: relative;
+          display: inline-block;
+          margin: 0 20px;
+          cursor: pointer;
+          @media (max-width: 991px){
+            display: block;
+            color: #707070;
+            padding: 15px 10px;
+          }
+        }
+      }
+      .optionsMenu{
+        .active, li:hover{
+          color:#f0d589;
+        }
+        .active::before{
+          content: "";
+          position: absolute;
+          background-color: #f0d589;
+          width: 52px;
+          height: 2px;
+          bottom: -5px;
+          margin-left:auto;
+          margin-right:auto;
+          left:0;
+          right:0;
+          @media (max-width: 991px){
+            background-color: transparent;
+          }
+        }
+      }
+      .btnNav{
+        span{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+//Hamburguer Menu
+.hamburger-menu {
+  position: absolute;
+  top: 77%;
+  right: 20px;
+  margin-top: -11px;
+  width: $bar-width;
+  height: $bar-height + $bar-spacing*2;
+  cursor: pointer;
+  display: none;
+  @media (max-width: 991px){
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+.bar,
+.bar:after,
+.bar:before {
+  width: $bar-width;
+  height: 2px;
+}
+.bar {
+  position: relative;
+  transform: translateY($bar-spacing);
+  background: #fff;
+  transition: all 0ms 300ms;
+
+  &.animate {
+    background: transparent;
+  }
+}
+
+.bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: $bar-spacing;
+  background: #fff;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: $bar-spacing;
+  background: #fff;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.bar.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+.bar.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+//Fin Hamburguer Menu
+
+
+//Cuando haga scroll el menu cambia de color
+.__activeScroll{
+  &.bg_blanco{
+    background-color: #fff;
+  }
+  &.bg_verdeClaro{
+    background-color: #95e1d3;
+  }
+}

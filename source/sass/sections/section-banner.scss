@@ -1,0 +1,107 @@
+#banner{
+  .__1{
+    background-image: url("../images/Banner-layer-2.jpg");
+    .filter{
+      background: linear-gradient(to bottom,#19547b,#ffd89b);
+    }
+  }
+  .__2{
+    background-image: url("../images/Banner-layer.png");
+    .filter{
+      background: linear-gradient(to bottom, #e88482, #f0d789);
+    }
+  }
+  .__3{
+    background-image: url("../images/Banner-layer-3.jpg");
+    .filter{
+      background: linear-gradient(to bottom,#3fada8,#808080);
+    }
+  }
+  .item{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .filter{
+      height: 100vh;
+      opacity: 0.9;
+      filter: alpha(opacity=90);
+    }
+    .information{
+      width: 100%;
+      position: absolute;
+      top:0;
+      color:#fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      .text{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 60px;
+      }
+      h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 125px;
+        line-height: 1;
+        font-weight: 900;
+        position: relative;
+      }
+      h1::before{
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        width: 68px;
+        height: 3px;
+        bottom: -38px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+      .btnPrincipal{
+        background-color: transparent;
+        margin: 90px auto 0;
+        a{
+          border: 2px solid #fff;
+          color: #fff;
+          padding: 10px 50px;
+          transition: .3s  ease-in-out;
+        }
+        a:hover, a:active, a:focus{
+          text-decoration: none;
+        }
+        a:hover{
+          background-color: #fff;
+          border: transparent;
+          color: #e17977;
+        }
+      }
+    }
+  }
+  .owl-theme .owl-dots{
+    position: absolute;
+    width: 100%;
+    bottom: 80px;
+    .owl-dot.active{
+        span{
+          background: #f38181;
+        }
+    }
+    .owl-dot{
+      span{
+        width: 200px;
+        height: 3px;
+        background: #f7eac5;
+      }
+    }
+    .owl-dot:focus{
+      outline: none;
+    }
+  }
+}
+
+
+

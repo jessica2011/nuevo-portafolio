@@ -1,0 +1,364 @@
+@media (max-width: 1199px) {
+  #services{
+    .container{      
+      .line{
+        width: 930px;
+      }
+    }
+  }
+  #we-do{
+    .container{
+      .box-accordion{
+        .accordion{
+          .wrapper{
+            .text{
+              height: 92px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  #banner{
+    .item{
+      background-position: 60% center;
+    }
+  }
+  #services{
+    .container{
+      .line{
+        width: 900px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  //General
+  .box-title{
+    .title{
+      font-size: 18px;
+    }
+    .subtitle{
+      font-size: 25px;
+    }
+    .subtitle:before{
+      width: 30px;
+      margin-top: 48px;
+    }
+  }
+  //fin-general
+  #banner{
+    .item{
+      background-position: 80% center;
+      .information{
+        .text{
+          font-size: 30px;
+        }
+        h1{
+          font-size: 2.5rem;
+        }
+        h1::before{
+          width: 30px;
+          height: 2px;
+          bottom: -20px;
+        }
+      }
+    }
+    .owl-theme .owl-dots{
+      .owl-dot{
+        span{
+          width: 45px;
+        }
+      }
+    }
+  }
+
+  #about{
+    padding: 45px 0;
+    .box-information{
+      padding: 45px 0 30px;
+    }
+    .box-details{
+      .inserteCarousel{
+        display: inherit;
+        .caption{
+          pointer-events:none;
+          width: 290px;
+        }
+      }
+    }
+  }
+  #counter{
+    .container{
+      padding: 30px 50px;
+      .box-numeral{
+        .num{
+          font-size: 32px;
+        }
+        .text{
+          font-size: 15px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+  #services{
+    padding: 45px 0;
+    .container{
+      padding: 0;
+      .contenedor{
+        display: flex;
+        .box-information{
+          .wrapper{
+            width: 100%;
+            padding: 18px;
+          }
+          .info{
+            padding-left: 10px;
+          }
+        }
+      }
+      .line{
+        position: absolute;
+        content: "";
+        height: 420px;
+        width: 1px;
+        bottom: 0;
+      }
+    }
+  }
+  #design{
+    padding: 45px 0 0 0;
+    .container{
+      .box_phone{
+        padding: 25px 0 0 0;
+        width: 470px;
+        .wrapper{
+          &--tablet{
+            img{
+              width: 400px;
+            }
+          }
+          &--phone{
+            bottom: -42px;
+            img{
+              width: 185px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #we-do{
+    padding: 60px 0 45px;
+    .container{
+      .box-information{
+        padding: 45px 0 15px;
+      }
+      .box-accordion{
+        flex-direction: column;
+        align-items: center;
+        .img-accordion {
+          width: 75%;
+        }
+        .accordion{
+          width: 100%;
+          padding: 30px 0;
+          .wrapper{
+            .text{
+              height: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #comments{
+    #owl-comentarios{
+      .item-carousel{
+        align-items:flex-start;
+        padding: 0 30px;
+        .wrapper-img{
+          padding: 18px;
+          border: 1px solid #95e1d3;
+          margin: 0 20px 0 0;
+        }
+        .wrapper-text{
+          p:nth-child(1){
+            font-size: inherit;
+          }
+          p:nth-last-child(1){
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }  
+}
+
+@media (max-width: 767px){
+  #banner{
+    .item{
+      background-position: 63% top;
+    }
+  }
+  #section-counter{
+    .container{
+      padding: 30px;
+    }
+  }
+  #counter{
+    .container{
+      padding: 30px 15px;
+    }
+  }
+  #services{
+    .container{
+      display: block;
+      .contenedor{
+        display: inherit;
+        padding-bottom: 10px;
+        .box-information{
+          padding: 30px 0 0 0;
+          .wrapper{
+            width: 330px;
+            padding: 25px;
+            margin: 0 auto;
+            .img{
+              width: 120px;
+            }
+          }
+          .info{
+            padding-left: 0;
+          }
+          &--wrapper_more{
+            padding: 0!important;
+            overflow: hidden;
+            height: 0;
+            transition: all 0.5s ease;
+          }
+        }
+        .box--btn{
+          display: flex;
+          &.show{
+            bottom: -15px;
+            + .box-information--wrapper_more{
+  
+            }
+          }
+        }
+      }
+      .line{
+        display: none;
+      }
+    }
+  }
+  #design{
+    .container{
+      .box_phone{
+        width: 340px;
+        .wrapper{
+          &--tablet{
+            img{
+              width: 300px;
+            }
+          }
+          &--phone{
+            img{
+              width: 140px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #we-do{
+    padding: 60px 0 10px;
+    .container{
+      .box-accordion{
+        .img-accordion {
+          width: 100%;
+        }
+        .accordion{
+          .wrapper{
+            .heading{
+              h5{
+                .box{
+                  span{
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+            .text{
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #comments{
+    padding: 40px 0;
+    #owl-comentarios{
+      .item-carousel{
+        .wrapper-img{
+          display: none;
+        }
+        .wrapper-text{
+          p:nth-last-child(1){
+            &:before{
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 375px){
+  #section-counter{
+    .container{
+      padding: 30px 15px;
+    }
+  }
+}
+
+@media (max-width: 320px){
+  #services{
+    .container{
+      .box-information{
+        .wrapper{
+          padding: 25px 0;
+          width: 280px;
+        }
+      }
+    }
+  }
+  #design{
+    .container{
+      .box_phone{
+        width: 290px;
+        .wrapper{
+          &--tablet{
+            img{
+              width: 250px;
+            }
+          }
+          &--phone{
+            bottom: -30px;
+            img{
+              width: 115px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

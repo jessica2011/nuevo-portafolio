@@ -1,0 +1,78 @@
+#comments{
+  background-color: #f8f8f8;
+  padding: 70px 0;
+  #owl-comentarios{
+    position: relative;
+    .item-carousel{
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      .wrapper-img{
+        padding: 40px;
+        border: 2px solid #95e1d3;
+        margin: 0 50px 0 0;
+      }
+      .wrapper-text{
+        p:nth-child(1){
+          font-family: 'Roboto', sans-serif;
+          font-weight: lighter;
+          font-style: italic;
+          color:#999999;
+          font-size: 18px;
+        }
+        p:nth-last-child(1){
+          font-family: 'Kaushan Script', cursive;
+          color:#333333;
+          font-size: 20px;
+          margin-bottom: 0;
+          &:before{
+            content: "-";
+            color:transparent;
+            background-color: #f38181;
+            width: 60px;
+            height: 1px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+    }
+    .owl-nav{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      margin: auto 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      .owl-prev span, .owl-next span{
+        display: none;
+      }
+      .owl-prev, .owl-next{
+        background: url("../images/expand-button.png");
+        width: 25px;
+        height: 12px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+        margin: 0;
+        cursor: pointer;
+        &:focus{
+          outline: none;
+        }
+      }
+      .owl-prev{
+        position: absolute;
+        left: 0;
+        transform: rotate(90deg) 
+      } 
+      .owl-next{
+        position: absolute;
+        right: 0;
+        transform: rotate(-90deg) 
+      }
+    }
+  }
+}
+
