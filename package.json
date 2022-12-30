@@ -38,6 +38,6 @@
     "imagemin-pngquant": "^5.0.0",
     "imagemin-svgo": "^5.1.0",
     "vinyl-yaml-data": "^2.0.1",
-    "webpack-stream": "^3.2.0"
+    "webpack-stream": "^7.0.0"
   }
 }
